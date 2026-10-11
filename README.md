@@ -71,6 +71,7 @@ Me gusta construir cosas completas: desde la idea y el diseño hasta que quedan 
 
 [![Portafolio](https://img.shields.io/badge/blancarte.lat-0a1230?style=for-the-badge&logo=googlechrome&logoColor=a8c4f0)](https://blancarte.lat)
 [![Correo](https://img.shields.io/badge/contacto@blancarte.lat-0a1230?style=for-the-badge&logo=maildotru&logoColor=a8c4f0)](mailto:contacto@blancarte.lat)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a1230?style=for-the-badge&logo=linkedin&logoColor=a8c4f0)](https://www.linkedin.com/in/osvaldo-blancarte)
 [![Instagram](https://img.shields.io/badge/@osva7655-0a1230?style=for-the-badge&logo=instagram&logoColor=a8c4f0)](https://www.instagram.com/osva7655)
 
 <picture>
