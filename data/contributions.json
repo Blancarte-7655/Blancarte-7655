@@ -2,10 +2,10 @@
  "usuario": "Blancarte-7655",
  "actualizado": "2026-10-11",
  "stats": {
-  "total": 25,
+  "total": 28,
   "racha_actual": 1,
   "racha_larga": 2,
-  "mejor_dia": "11 oct (12)"
+  "mejor_dia": "11 oct (15)"
  },
  "dias": [
   {
@@ -820,7 +820,7 @@
   },
   {
    "fecha": "2026-03-23",
-   "nivel": 1,
+   "nivel": 4,
    "cuenta": 1
   },
   {
@@ -1180,7 +1180,7 @@
   },
   {
    "fecha": "2026-06-03",
-   "nivel": 1,
+   "nivel": 4,
    "cuenta": 1
   },
   {
@@ -1295,7 +1295,7 @@
   },
   {
    "fecha": "2026-06-26",
-   "nivel": 1,
+   "nivel": 4,
    "cuenta": 1
   },
   {
@@ -1380,7 +1380,7 @@
   },
   {
    "fecha": "2026-07-13",
-   "nivel": 1,
+   "nivel": 4,
    "cuenta": 1
   },
   {
@@ -1775,12 +1775,12 @@
   },
   {
    "fecha": "2026-09-30",
-   "nivel": 2,
+   "nivel": 4,
    "cuenta": 4
   },
   {
    "fecha": "2026-10-01",
-   "nivel": 2,
+   "nivel": 4,
    "cuenta": 5
   },
   {
@@ -1831,7 +1831,7 @@
   {
    "fecha": "2026-10-11",
    "nivel": 4,
-   "cuenta": 12
+   "cuenta": 15
   }
  ]
 }
