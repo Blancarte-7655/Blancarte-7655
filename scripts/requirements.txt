@@ -1,0 +1,8 @@
+requests==2.32.3
+beautifulsoup4==4.12.3
+# Solo para el retrato ASCII (se corre en tu compu, no en la Action diaria):
+pillow
+numpy
+opencv-python-headless
+# opcional: quita el fondo de la foto
+# rembg
