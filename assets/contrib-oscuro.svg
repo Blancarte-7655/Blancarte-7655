@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 237" width="860" height="237" role="img" aria-label="contribuciones — blancarte">
-<style>.c{opacity:0;transform-box:fill-box;transform-origin:center;animation:cae .55s cubic-bezier(.2,.8,.2,1) forwards}@keyframes cae{from{opacity:0;transform:translateY(-7px) scale(.6)}to{opacity:1;transform:none}}.pie{opacity:0;animation:ap 1s 1.6s ease-out forwards}@keyframes ap{to{opacity:1}}
+<style>.c{transform-box:fill-box;transform-origin:center;animation:cae .55s cubic-bezier(.2,.8,.2,1) both}@keyframes cae{from{opacity:0;transform:translateY(-7px) scale(.6)}to{opacity:1;transform:none}}.pie{animation:ap 1s 1.6s ease-out both}@keyframes ap{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
 <defs>
 <linearGradient id="fd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1430"/><stop offset="1" stop-color="#080d22"/></linearGradient>
@@ -377,8 +377,8 @@
 <rect class="c" style="animation-delay:0.900s" x="796" y="92" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 27 sep 2026</title></rect>
 <rect class="c" style="animation-delay:0.936s" x="796" y="107" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 28 sep 2026</title></rect>
 <rect class="c" style="animation-delay:0.972s" x="796" y="122" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 29 sep 2026</title></rect>
-<rect class="c" style="animation-delay:1.008s" x="796" y="137" width="12" height="12" rx="3" fill="#4a72c0"><title>4 contribuciones · 30 sep 2026</title></rect>
-<rect class="c" style="animation-delay:1.044s" x="796" y="152" width="12" height="12" rx="3" fill="#4a72c0"><title>5 contribuciones · 1 oct 2026</title></rect>
+<rect class="c" style="animation-delay:1.008s" x="796" y="137" width="12" height="12" rx="3" fill="#2d4a8c"><title>4 contribuciones · 30 sep 2026</title></rect>
+<rect class="c" style="animation-delay:1.044s" x="796" y="152" width="12" height="12" rx="3" fill="#2d4a8c"><title>5 contribuciones · 1 oct 2026</title></rect>
 <rect class="c" style="animation-delay:1.080s" x="796" y="167" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 2 oct 2026</title></rect>
 <rect class="c" style="animation-delay:1.116s" x="796" y="182" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 3 oct 2026</title></rect>
 <rect class="c" style="animation-delay:0.918s" x="811" y="92" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 4 oct 2026</title></rect>
@@ -388,8 +388,8 @@
 <rect class="c" style="animation-delay:1.062s" x="811" y="152" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 8 oct 2026</title></rect>
 <rect class="c" style="animation-delay:1.098s" x="811" y="167" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 9 oct 2026</title></rect>
 <rect class="c" style="animation-delay:1.134s" x="811" y="182" width="12" height="12" rx="3" fill="#141d3f"><title>0 contribuciones · 10 oct 2026</title></rect>
-<rect class="c" style="animation-delay:0.936s" x="826" y="92" width="12" height="12" rx="3" fill="#7fa3e0"><title>7 contribuciones · 11 oct 2026</title></rect>
-<text class="pie" x="20" y="227" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#aeb7cf"><tspan fill="#a8c4f0" font-weight="700">20</tspan> contribuciones en el último año <tspan fill="#2d5a8c">·</tspan> racha actual <tspan fill="#e6e9f2">1 d</tspan> <tspan fill="#2d5a8c">·</tspan> más larga <tspan fill="#e6e9f2">2 d</tspan> <tspan fill="#2d5a8c">·</tspan> mejor día <tspan fill="#e6e9f2">11 oct (7)</tspan></text>
+<rect class="c" style="animation-delay:0.936s" x="826" y="92" width="12" height="12" rx="3" fill="#7fa3e0"><title>12 contribuciones · 11 oct 2026</title></rect>
+<text class="pie" x="20" y="227" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#aeb7cf"><tspan fill="#a8c4f0" font-weight="700">25</tspan> contribuciones en el último año <tspan fill="#2d5a8c">·</tspan> racha actual <tspan fill="#e6e9f2">1 d</tspan> <tspan fill="#2d5a8c">·</tspan> más larga <tspan fill="#e6e9f2">2 d</tspan> <tspan fill="#2d5a8c">·</tspan> mejor día <tspan fill="#e6e9f2">11 oct (12)</tspan></text>
 <g class="pie"><text x="680" y="56" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="10" fill="#6b7699">menos</text><rect x="718" y="46" width="12" height="12" rx="3" fill="#141d3f"/><rect x="733" y="46" width="12" height="12" rx="3" fill="#1d2f63"/><rect x="748" y="46" width="12" height="12" rx="3" fill="#2d4a8c"/><rect x="763" y="46" width="12" height="12" rx="3" fill="#4a72c0"/><rect x="778" y="46" width="12" height="12" rx="3" fill="#7fa3e0"/><rect x="793" y="46" width="12" height="12" rx="3" fill="#d4e2ff"/><text x="812" y="56" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="10" fill="#6b7699">más</text></g>
 <text class="pie" x="20" y="247" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="9.5" fill="#6b7699">// se actualiza solo cada día · 2026-10-11</text>
 </g>
