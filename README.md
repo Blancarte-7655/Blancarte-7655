@@ -21,10 +21,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/sobre-oscuro.svg">
-  <img src="assets/sobre-claro.svg" width="100%" alt="Estudio Ingeniería en Informática en la UdeG y vivo en Guadalajara. Mis lenguajes fuertes son JavaScript, Python y SQL.">
+  <img src="assets/sobre-claro.svg" width="100%" alt="Soy Manuel Osvaldo Montes Blancarte, estudiante de Ingeniería en Informática en la UdeG, de Guadalajara. Más información en blancarte.lat">
 </picture>
 
-Desarrollo aplicaciones web completas —interfaz, API, base de datos y servidor Linux— y modelos de IA de visión por computadora. Diseñé la IA de un traductor del abecedario de Lengua de Señas Mexicana, publicado en la Gaceta UdeG. Fuera del código soy baterista y productor.
+Me gusta construir cosas completas: desde la idea y el diseño hasta que quedan en línea, seguras y funcionando. Disfruto los retos donde se cruzan la IA, la web y la seguridad, y aprendo mejor haciendo proyectos reales.
+
+**Para conocer más de mí y ver mis proyectos a detalle, visita mi página: [blancarte.lat](https://blancarte.lat)**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/titulo-proyectos-oscuro.svg">
@@ -36,7 +38,7 @@ Desarrollo aplicaciones web completas —interfaz, API, base de datos y servidor
   <a href="https://uniaccess.aquora.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-uniaccess-oscuro.svg"><img src="assets/proy-uniaccess-claro.svg" width="49%" alt="UniAccess"></picture></a>
   <a href="https://demo-renta.blancarte.lat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-rentas-oscuro.svg"><img src="assets/proy-rentas-claro.svg" width="49%" alt="Rentas"></picture></a>
   <a href="https://nexus.aquora.dev/login.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-nexus-oscuro.svg"><img src="assets/proy-nexus-claro.svg" width="49%" alt="Nexus"></picture></a>
-  <a href="https://blancarte.lat/trabajo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-servidor-oscuro.svg"><img src="assets/proy-servidor-claro.svg" width="49%" alt="Mi servidor"></picture></a>
+  <a href="https://blancarte.lat/trabajo.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-servidor-oscuro.svg"><img src="assets/proy-servidor-claro.svg" width="49%" alt="Mi servidor"></picture></a>
   <a href="https://sis.aquora.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-sis-oscuro.svg"><img src="assets/proy-sis-claro.svg" width="49%" alt="SIS · en proceso"></picture></a>
 </p>
 
