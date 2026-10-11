@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="440" height="210">
+<style>.g{animation:sh 6s ease-in-out infinite}@keyframes sh{0%,100%{opacity:.0}50%{opacity:.6}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs><linearGradient id="br" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2d5a8c" stop-opacity="0"/><stop offset=".5" stop-color="#2d5a8c"/><stop offset="1" stop-color="#2d5a8c" stop-opacity="0"/></linearGradient></defs>
+<rect x=".5" y=".5" width="439" height="209" rx="12" fill="#f1f0f6" stroke="#c9c6da"/>
+<rect class="g" x="20" y=".5" width="400" height="1.6" fill="url(#br)"/>
+<text x="24" y="34" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11" letter-spacing="2" fill="#6f6b8a">// SIS.AQUORA.DEV</text>
+<text x="24" y="64" font-family="Georgia,'Times New Roman',serif" font-size="23" fill="#171a2e">SIS · <tspan font-style="italic" fill="#2d5a8c">en proceso</tspan></text>
+<text x="24" y="92" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#4a4f66">Sistema de identidad simulado: registro, panel y</text><text x="24" y="112" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#4a4f66">credencial digital con QR.</text>
+<rect x="24" y="160" width="58" height="22" rx="11" fill="#e5e3ee" stroke="#c9c6da"/><text x="53" y="175" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#2d5a8c">React</text><rect x="88.0" y="160" width="43" height="22" rx="11" fill="#e5e3ee" stroke="#c9c6da"/><text x="109" y="175" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#2d5a8c">CSS</text><rect x="136.8" y="160" width="50" height="22" rx="11" fill="#e5e3ee" stroke="#c9c6da"/><text x="162" y="175" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#2d5a8c">A11y</text>
+<text x="416" y="192" text-anchor="end" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="11.5" fill="#2d5a8c">ver →</text>
+</svg>
