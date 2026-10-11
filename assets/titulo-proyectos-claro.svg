@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 70" width="1200" height="70">
-<style>.r{animation:up 1s ease-out both}@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.c{animation:bl 1.1s steps(1) infinite}@keyframes bl{50%{opacity:0}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<g class="r"><text x="2" y="22" font-family="'SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace" font-size="13" letter-spacing="3" fill="#6f6b8a">// PROYECTOS</text>
-<text x="0" y="60" font-family="Georgia,'Times New Roman',serif" font-size="34" fill="#171a2e">Proyectos <tspan font-style="italic" fill="#2d5a8c">seleccionados</tspan></text></g>
-</svg>

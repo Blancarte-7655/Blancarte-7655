@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 34" width="1200" height="34">
-<style>.a{animation:mv 12s linear infinite}.b{animation:mv 18s linear infinite reverse}@keyframes mv{from{transform:translateX(0)}to{transform:translateX(-300px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
-<path class="a" d="M0 14 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0 q 37.5 -5 75.0 0 t 75.0 0" fill="none" stroke="#2d5a8c" stroke-width="1.4" opacity=".85"/>
-<path class="b" d="M0 22 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0 q 75.0 -4 150.0 0 t 150.0 0" fill="none" stroke="#2d5a8c" stroke-width="1" opacity=".45"/>
-</svg>
