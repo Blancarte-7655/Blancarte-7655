@@ -10,21 +10,20 @@ MONO = "'JetBrains Mono','SFMono-Regular',Consolas,'DejaVu Sans Mono',monospace"
 SERIF = "Georgia,'Times New Roman',serif"
 
 TEMAS = {
-    # azul noche como el mar de la página
+    # grafito + plata con un toque de azul (combina con el gris de GitHub)
     "oscuro": dict(
-        fondo1="#0d1430", fondo2="#080d22", borde="#24305e", barra="#111a3a",
-        tinta="#e6e9f2", suave="#aeb7cf", tenue="#6b7699", acento="#a8c4f0",
-        linea="#2d5a8c", prompt="#7fa3e0", ascii="#cfd8f0",
-        # nivel 0 -> 5: de agua profunda a espuma
-        calor=["#141d3f", "#1d2f63", "#2d4a8c", "#4a72c0", "#7fa3e0", "#d4e2ff"],
+        fondo1="#161b22", fondo2="#0d1117", borde="#30363d", barra="#1c2128",
+        tinta="#f0f3f6", suave="#b1bac4", tenue="#7d8590", acento="#bccbe4",
+        linea="#56647c", prompt="#a9b6cc", ascii="#c9d1d9",
+        # nivel 0 -> 5: de grafito a plata azulada
+        calor=["#21262d", "#353c47", "#555f6f", "#7f8ca3", "#aebbd4", "#e3ebfa"],
         puntos=["#e06c75", "#e5c07b", "#98c379"],
     ),
-    # blanco perla lavanda como el tema claro
     "claro": dict(
-        fondo1="#f4f3f8", fondo2="#e9e7f1", borde="#c9c6da", barra="#e3e1ec",
-        tinta="#171a2e", suave="#4a4f66", tenue="#8a87a3", acento="#2d5a8c",
-        linea="#6f7fb0", prompt="#2d5a8c", ascii="#1d2547",
-        calor=["#e2e0ec", "#c9d3ea", "#93a9d6", "#5a7fbf", "#2d5a8c", "#142a57"],
+        fondo1="#f6f8fa", fondo2="#eef1f4", borde="#d0d7de", barra="#eaeef2",
+        tinta="#1f2328", suave="#4b5563", tenue="#6e7781", acento="#3e4c66",
+        linea="#8c96a8", prompt="#3e4c66", ascii="#2b3240",
+        calor=["#ebedf0", "#d3d9e2", "#aab4c3", "#7c8799", "#4f5a6c", "#262d38"],
         puntos=["#d4646e", "#d6a84a", "#6fa35a"],
     ),
 }
