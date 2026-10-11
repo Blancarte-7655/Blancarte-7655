@@ -8,12 +8,6 @@
   </picture>
 </a>
 
-<p align="center">
-  <a href="https://blancarte.lat">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3200&pause=900&color=5A7FBF&center=true&vCenter=true&width=640&lines=JavaScript+%C2%B7+Python+%C2%B7+SQL+%C2%B7+TypeScript;MySQL+%C2%B7+SQLite+%C2%B7+MySQL+Workbench;Linux+%C2%B7+Ubuntu+%C2%B7+Nginx+%C2%B7+Cloudflare;Ableton+Live+%C2%B7+Pro+Tools+%C2%B7+Waves+%C2%B7+Valhalla;Premiere+Pro+%C2%B7+DaVinci+Resolve+%C2%B7+Photoshop+%C2%B7+Lightroom" alt="Lenguajes, bases de datos, servidor, audio y video: JavaScript · Python · SQL · TypeScript; MySQL · SQLite · MySQL Workbench; Linux · Ubuntu · Nginx · Cloudflare; Ableton Live · Pro Tools · Waves · Valhalla; Premiere Pro · DaVinci Resolve · Photoshop · Lightroom">
-  </a>
-</p>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/titulo-sobre-oscuro.svg">
   <img src="assets/titulo-sobre-claro.svg" width="100%" alt="Sobre mí">
@@ -24,9 +18,7 @@
   <img src="assets/sobre-claro.svg" width="100%" alt="Soy Manuel Osvaldo Montes Blancarte, estudiante de Ingeniería en Informática en la UdeG, de Guadalajara. Más información en blancarte.lat">
 </picture>
 
-Me gusta construir cosas completas: desde la idea y el diseño hasta que quedan en línea, seguras y funcionando. Disfruto los retos donde se cruzan la IA, la web y la seguridad, y aprendo mejor haciendo proyectos reales.
-
-**Para conocer más de mí y ver mis proyectos a detalle, visita mi página: [blancarte.lat](https://blancarte.lat)**
+<p align="center">Más de mí y mis proyectos a detalle en <a href="https://blancarte.lat"><b>blancarte.lat</b></a></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/titulo-proyectos-oscuro.svg">
@@ -38,8 +30,6 @@ Me gusta construir cosas completas: desde la idea y el diseño hasta que quedan 
   <a href="https://uniaccess.aquora.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-uniaccess-oscuro.svg"><img src="assets/proy-uniaccess-claro.svg" width="49%" alt="UniAccess"></picture></a>
   <a href="https://demo-renta.blancarte.lat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-rentas-oscuro.svg"><img src="assets/proy-rentas-claro.svg" width="49%" alt="Rentas"></picture></a>
   <a href="https://nexus.aquora.dev/login.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-nexus-oscuro.svg"><img src="assets/proy-nexus-claro.svg" width="49%" alt="Nexus"></picture></a>
-  <a href="https://blancarte.lat/trabajo.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-servidor-oscuro.svg"><img src="assets/proy-servidor-claro.svg" width="49%" alt="Mi servidor"></picture></a>
-  <a href="https://sis.aquora.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/proy-sis-oscuro.svg"><img src="assets/proy-sis-claro.svg" width="49%" alt="SIS · en proceso"></picture></a>
 </p>
 
 <picture>
@@ -69,10 +59,10 @@ Me gusta construir cosas completas: desde la idea y el diseño hasta que quedan 
   <img src="assets/titulo-contacto-claro.svg" width="100%" alt="Contacto">
 </picture>
 
-[![Portafolio](https://img.shields.io/badge/blancarte.lat-0a1230?style=for-the-badge&logo=googlechrome&logoColor=a8c4f0)](https://blancarte.lat)
-[![Correo](https://img.shields.io/badge/contacto@blancarte.lat-0a1230?style=for-the-badge&logo=maildotru&logoColor=a8c4f0)](mailto:contacto@blancarte.lat)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a1230?style=for-the-badge&logo=linkedin&logoColor=a8c4f0)](https://www.linkedin.com/in/osvaldo-blancarte)
-[![Instagram](https://img.shields.io/badge/@osva7655-0a1230?style=for-the-badge&logo=instagram&logoColor=a8c4f0)](https://www.instagram.com/osva7655)
+[![Portafolio](https://img.shields.io/badge/blancarte.lat-21262d?style=for-the-badge&logo=googlechrome&logoColor=bccbe4)](https://blancarte.lat)
+[![Correo](https://img.shields.io/badge/contacto@blancarte.lat-21262d?style=for-the-badge&logo=maildotru&logoColor=bccbe4)](mailto:contacto@blancarte.lat)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-21262d?style=for-the-badge&logo=linkedin&logoColor=bccbe4)](https://www.linkedin.com/in/osvaldo-blancarte)
+[![Instagram](https://img.shields.io/badge/@osva7655-21262d?style=for-the-badge&logo=instagram&logoColor=bccbe4)](https://www.instagram.com/osva7655)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/ola-oscuro.svg">

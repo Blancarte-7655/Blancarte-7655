@@ -73,38 +73,34 @@ def icono(t, clave, x, y):
     return f'<image x="{x}" y="{y}" width="{ICO}" height="{ICO}" href="{data_uri(txt)}"/>'
 
 
+PRINCIPALES = [
+    ("JavaScript", "si-javascript"), ("Python", "si-python"), ("SQL", "db"), ("TypeScript", "si-typescript"),
+    ("React", "si-react"), ("Next.js", "si-nextdotjs"), ("Node.js", "si-nodedotjs"), ("FastAPI", "si-fastapi"),
+    ("PyTorch", "si-pytorch"), ("OpenCV", "si-opencv"), ("MySQL", "si-mysql"), ("Linux", "si-linux"),
+    ("Nginx", "si-nginx"), ("Cloudflare", "si-cloudflare"), ("Git", "si-git"), ("Ableton", "Ab:#111111:#ffffff"),
+    ("Pro Tools", "si-protools"), ("DaVinci", "si-davinciresolve"),
+]
+
+
 def svg(t):
     c = TEMAS[t]
-    y = 26
+    por_fila, tw, th, gap = 9, 84, 70, 8
+    x0 = (ANCHO - (por_fila * tw + (por_fila - 1) * gap)) / 2
     out = []
-    for g, (titulo, items) in enumerate(GRUPOS):
-        d = g * 0.07
-        x = COL_X
-        fila_y = y
-        out.append(f'<text class="a" style="animation-delay:{d:.2f}s" x="28" y="{y + 37}" font-family="{MONO}" font-size="10.5" letter-spacing="1.6" fill="{c["tenue"]}">{esc(titulo.upper())}</text>')
-        for k, (nombre, clave) in enumerate(items):
-            if x + TW > ANCHO - 20:
-                x = COL_X
-                fila_y += TH + 8
-            fuerte = nombre in FUERTES
-            out.append(
-                f'<g class="a" style="animation-delay:{d + .03 * k:.2f}s">'
-                f'<rect x="{x}" y="{fila_y}" width="{TW - 8}" height="{TH}" rx="12" fill="{c["barra"]}" '
-                f'stroke="{c["acento"] if fuerte else c["borde"]}" stroke-width="{1.6 if fuerte else 1}"/>'
-                f'{icono(t, clave, x + (TW - 8 - ICO) / 2, fila_y + 10)}'
-                f'<text x="{x + (TW - 8) / 2}" y="{fila_y + 54}" text-anchor="middle" font-family="{MONO}" font-size="9.6" '
-                f'font-weight="{700 if fuerte else 400}" fill="{c["acento"] if fuerte else c["suave"]}">{esc(nombre)}</text></g>'
-            )
-            x += TW
-        y = fila_y + TH + 14
-        if g < len(GRUPOS) - 1:
-            out.append(f'<line x1="28" y1="{y - 7}" x2="{ANCHO - 28}" y2="{y - 7}" stroke="{c["borde"]}" stroke-opacity=".5"/>')
-            y += 6
-    out.append(
-        f'<g class="a" style="animation-delay:.8s"><rect x="28" y="{y + 2}" width="14" height="14" rx="4" fill="none" stroke="{c["acento"]}" stroke-width="1.6"/>'
-        f'<text x="50" y="{y + 13}" font-family="{MONO}" font-size="10.5" fill="{c["tenue"]}">mis fuertes</text></g>'
-    )
-    alto = y + 34
+    for k, (nombre, clave) in enumerate(PRINCIPALES):
+        x = x0 + (k % por_fila) * (tw + gap)
+        y = 22 + (k // por_fila) * (th + gap)
+        fuerte = nombre in FUERTES
+        out.append(
+            f'<g class="a" style="animation-delay:{k * .03:.2f}s">'
+            f'<rect x="{x:.1f}" y="{y}" width="{tw}" height="{th}" rx="12" fill="{c["barra"]}" '
+            f'stroke="{c["acento"] if fuerte else c["borde"]}" stroke-width="{1.6 if fuerte else 1}"/>'
+            f'{icono(t, clave, x + (tw - ICO) / 2, y + 11)}'
+            f'<text x="{x + tw / 2:.1f}" y="{y + 57}" text-anchor="middle" font-family="{MONO}" font-size="10" '
+            f'font-weight="{700 if fuerte else 400}" fill="{c["acento"] if fuerte else c["suave"]}">{esc(nombre)}</text></g>'
+        )
+    filas = (len(PRINCIPALES) + por_fila - 1) // por_fila
+    alto = 22 + filas * (th + gap) + 14
     estilo = ".a{animation:ap .6s ease-out both}@keyframes ap{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}"
     return marco(t, ANCHO, alto, "Herramientas que uso", f'<g transform="translate(0,22)">{"".join(out)}</g>', estilo)
 

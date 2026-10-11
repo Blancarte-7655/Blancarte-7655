@@ -17,8 +17,9 @@ CW, LH = 5.85, 10.4          # ancho de letra y alto de renglón
 RAMPA = " .`:-=+*cs#%@"      # claro (vacío) -> oscuro (lleno)
 
 
-def escena_luna():
-    """Luna con cráteres, estrellas y mar con reflejo. Blanco = vacío."""
+def escena_luna(t=0.0):
+    """Luna con cráteres, estrellas y mar con reflejo. Blanco = vacío.
+    `t` (0 a 2π) desplaza las olas: con varios valores se arma la animación del mar."""
     w, h = 900, 900
     im = Image.new("L", (w, h), 255)
     d = ImageDraw.Draw(im)
@@ -51,7 +52,7 @@ def escena_luna():
             break
         prof = (yb - hor) / (h - hor)
         amp, lam = 4 + 10 * prof, 60 + 120 * prof
-        fase = rng.uniform(0, 6)
+        fase = rng.uniform(0, 6) + t
         pts = [(x, yb + amp * np.sin(x / lam * 6.28 + fase)) for x in range(0, w + 10, 8)]
         # cortar la línea en tramos para que parezca espuma suave
         for j in range(0, len(pts) - 1):
@@ -63,7 +64,7 @@ def escena_luna():
     for y in range(hor, h):
         anc = 40 + (y - hor) * .35
         for x in range(int(cx - anc), int(cx + anc)):
-            if np.sin(y * .45 + x * .03) > .1:
+            if np.sin(y * .45 + x * .03 - t) > .1:
                 arr[y, x] = min(arr[y, x], 40 + abs(x - cx) / anc * 90 + (y - hor) * .12)
     arr[hor:hor + 5, :] = np.minimum(arr[hor:hor + 5, :], 90)
     return Image.fromarray(np.clip(arr, 0, 255).astype("uint8")).filter(ImageFilter.GaussianBlur(2))
@@ -95,17 +96,35 @@ HORIZONTE = int(FILAS * 560 / 900)       # renglón donde empieza el mar (escena
 LUNA = (int(COLS * 560 / 900), int(FILAS * 240 / 900), FILAS * 175 / 900)
 
 
-def partes(t, renglones, comando, movimiento=True):
+CUADROS = 8          # cuadros de la animación del mar
+PASO_SEG = 0.32      # segundos por cuadro
+
+
+def partes(t, renglones, comando, cuadros=None):
+    """cuadros: lista de versiones del dibujo con las olas desplazadas (o None = sin movimiento).
+    Todo el movimiento usa SMIL (<animate>), que GitHub reproduce aunque el sistema
+    tenga las animaciones reducidas."""
     c = TEMAS[t]
     x0, y0 = 16, 78
     W = COLS * CW
+    esc_ = lambda r: r.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    texto = lambda y, r, extra="": (f'<text x="{x0}" y="{y}" textLength="{W:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve" '
+                                     f'font-family="{MONO}" font-size="9.6" fill="{c["ascii"]}"{extra}>{esc_(r)}</text>')
     out = [f'<text x="20" y="56" font-family="{MONO}" font-size="12.5" fill="{c["prompt"]}">osvaldo@blancarte <tspan fill="{c["tenue"]}">~ $</tspan> <tspan fill="{c["tinta"]}">{comando}</tspan></text>']
-    defs = [f'<radialGradient id="brillo"><stop offset="0" stop-color="{c["acento"]}" stop-opacity=".28"/><stop offset="1" stop-color="{c["acento"]}" stop-opacity="0"/></radialGradient>']
-    if movimiento:
+    defs = [f'<radialGradient id="brillo"><stop offset="0" stop-color="{c["acento"]}" stop-opacity=".30"/><stop offset="1" stop-color="{c["acento"]}" stop-opacity="0"/></radialGradient>']
+    fin_impresion = 0.4 + len(renglones) * 0.07 + .4
+    if cuadros:
         lx, ly, lr = LUNA
-        out.append(f'<circle class="halo" cx="{x0 + lx * CW:.1f}" cy="{y0 + ly * LH - 4:.1f}" r="{lr * LH * 1.25:.1f}" fill="url(#brillo)"/>')
+        R = lr * LH * 1.25
+        out.append(
+            f'<circle cx="{x0 + lx * CW:.1f}" cy="{y0 + ly * LH - 4:.1f}" r="{R:.1f}" fill="url(#brillo)" opacity=".6">'
+            f'<animate attributeName="opacity" values=".55;1;.55" dur="6s" repeatCount="indefinite"/>'
+            f'<animate attributeName="r" values="{R * .94:.1f};{R * 1.08:.1f};{R * .94:.1f}" dur="6s" repeatCount="indefinite"/></circle>'
+        )
+    luna_g = []
     for i, r in enumerate(renglones):
-        if not r.strip():
+        en_mar = cuadros and i >= HORIZONTE
+        if not r.strip() and not en_mar:
             continue
         b = 0.4 + i * 0.07
         y = y0 + i * LH
@@ -113,43 +132,47 @@ def partes(t, renglones, comando, movimiento=True):
             f'<clipPath id="r{i}"><rect x="{x0 - 8}" y="{y - LH + 2}" width="0" height="{LH}">'
             f'<animate attributeName="width" from="0" to="{W + 16:.1f}" begin="{b:.2f}s" dur=".32s" fill="freeze"/></rect></clipPath>'
         )
-        txt = r.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        clase = ""
-        if movimiento and i >= HORIZONTE:
-            clase = f' class="ola" style="animation-delay:-{(i * 0.83) % 7:.2f}s"'
-        elif movimiento and abs(i - LUNA[1]) <= LUNA[2] + 1:
-            clase = ' class="luna"'
-        out.append(
-            f'<g clip-path="url(#r{i})"><g{clase}><text x="{x0}" y="{y}" textLength="{W:.1f}" lengthAdjust="spacingAndGlyphs" xml:space="preserve" font-family="{MONO}" font-size="9.6" fill="{c["ascii"]}">{txt}</text></g></g>'
-        )
-        out.append(
-            f'<rect x="{x0}" y="{y - LH + 2}" width="6" height="{LH - 1}" fill="{c["acento"]}" opacity="0">'
-            f'<animate attributeName="x" from="{x0}" to="{x0 + W:.1f}" begin="{b:.2f}s" dur=".32s" fill="freeze"/>'
-            f'<animate attributeName="opacity" values="1;1;0" keyTimes="0;.95;1" begin="{b:.2f}s" dur=".33s" fill="freeze"/></rect>'
-        )
-    estilo = (
-        # el mar se mece un poquito, cada renglón a su ritmo
-        ".ola{animation:mece 7s ease-in-out infinite alternate}"
-        "@keyframes mece{from{transform:translateX(-4px)}to{transform:translateX(4px)}}"
-        # la luna flota y respira
-        ".luna{animation:flota 9s ease-in-out infinite}"
-        "@keyframes flota{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(-2px);opacity:.82}}"
-        ".halo{transform-box:fill-box;transform-origin:center;animation:hl 6s ease-in-out infinite}"
-        "@keyframes hl{0%,100%{opacity:.6;transform:scale(.94)}50%{opacity:1;transform:scale(1.06)}}"
-    )
-    return f'<defs>{"".join(defs)}</defs>' + "\n".join(out), estilo
+        if en_mar:
+            # el mar: varios cuadros que se van turnando -> las olas avanzan
+            n = len(cuadros)
+            kt = ";".join(f"{k / n:.4f}" for k in range(n))
+            capas = []
+            for k, cuadro in enumerate(cuadros):
+                vals = ";".join("1" if j == k else "0" for j in range(n))
+                capas.append(texto(y, cuadro[i],
+                    f' opacity="{1 if k == 0 else 0}"><animate attributeName="opacity" values="{vals}" keyTimes="{kt}" calcMode="discrete" '
+                    f'begin="{fin_impresion:.2f}s" dur="{n * PASO_SEG:.2f}s" repeatCount="indefinite"/').replace('"></text>', '"></text>'))
+            # texto() cierra con >contenido</text>; la animación va dentro del <text>
+            capas = [cp.replace('repeatCount="indefinite"/>', 'repeatCount="indefinite"/>', 1) for cp in capas]
+            out.append(f'<g clip-path="url(#r{i})">{"".join(capas)}</g>')
+        elif cuadros and abs(i - LUNA[1]) <= LUNA[2] + 1:
+            luna_g.append(f'<g clip-path="url(#r{i})">{texto(y, r)}</g>')
+        else:
+            out.append(f'<g clip-path="url(#r{i})">{texto(y, r)}</g>')
+        if r.strip():
+            out.append(
+                f'<rect x="{x0}" y="{y - LH + 2}" width="6" height="{LH - 1}" fill="{c["acento"]}" opacity="0">'
+                f'<animate attributeName="x" from="{x0}" to="{x0 + W:.1f}" begin="{b:.2f}s" dur=".32s" fill="freeze"/>'
+                f'<animate attributeName="opacity" values="1;1;0" keyTimes="0;.95;1" begin="{b:.2f}s" dur=".33s" fill="freeze"/></rect>'
+            )
+    if luna_g:
+        # la luna flota despacito
+        out.append('<g>' + "".join(luna_g) +
+                   '<animateTransform attributeName="transform" type="translate" values="0 0;0 -2.5;0 0" dur="8s" repeatCount="indefinite"/></g>')
+    return f'<defs>{"".join(defs)}</defs>' + "\n".join(out), ""
 
 
-def svg(t, renglones, comando, movimiento=True):
-    cuerpo, estilo = partes(t, renglones, comando, movimiento)
+def svg(t, renglones, comando, cuadros=None):
+    cuerpo, estilo = partes(t, renglones, comando, cuadros)
     return marco(t, ANCHO, ALTO, "retrato — blancarte", cuerpo, estilo)
 
 
 def generar():
     """Devuelve (renglones, comando, hay_movimiento) según si se pasó una foto."""
     if len(sys.argv) > 1:
-        return a_texto(preparar_foto(sys.argv[1])), "cat retrato.txt", False
-    return a_texto(escena_luna()), "cat luna.txt", True
+        return a_texto(preparar_foto(sys.argv[1])), "cat retrato.txt", None
+    cuadros = [a_texto(escena_luna(2 * np.pi * k / CUADROS)) for k in range(CUADROS)]
+    return cuadros[0], "cat luna.txt", cuadros
 
 
 def main():

@@ -4,17 +4,12 @@ from comun import MONO, TEMAS, esc, guardar, marco
 ANCHO, ALTO = 490, 408
 
 FILAS = [
-    ("Soy", "Manuel Osvaldo Montes Blancarte"),
     ("Estudio", "Ing. en Informática · UdeG"),
     ("De", "Guadalajara, Jalisco"),
-    ("Hago", "apps web de punta a punta"),
-    ("Me mueve", "IA, visión y ciberseguridad"),
-    ("Orgullo", "IA de señas en la Gaceta UdeG"),
-    ("Certificado", "Cisco Jr. Cybersecurity Analyst"),
-    ("Idiomas", "Español · Inglés (estudiando)"),
-    ("Fuera del código", "baterista y productor"),
-    ("También", "foto y edición de video"),
-    ("Contacto", "contacto@blancarte.lat"),
+    ("Hago", "apps web, IA y servidores"),
+    ("Orgullo", "IA de señas · Gaceta UdeG"),
+    ("Certificado", "Cisco Cybersecurity"),
+    ("Música", "baterista y productor"),
 ]
 
 
@@ -34,9 +29,9 @@ def partes(t):
     for i, (k, v) in enumerate(FILAS):
         out.append(
             f'<text class="l" style="animation-delay:{0.55 + i * 0.12:.2f}s" x="20" y="{y}" font-family="{MONO}" font-size="12">'
-            f'<tspan fill="{c["acento"]}" font-weight="700">{esc(k)}</tspan><tspan x="152" fill="{c["tinta"]}">{esc(v)}</tspan></text>'
+            f'<tspan fill="{c["acento"]}" font-weight="700">{esc(k)}</tspan><tspan x="130" fill="{c["tinta"]}">{esc(v)}</tspan></text>'
         )
-        y += 19.5
+        y += 26
     y += 6
     d = 0.55 + len(FILAS) * 0.12
     for k, col in enumerate(c["calor"] + [c["acento"], c["tinta"]]):
