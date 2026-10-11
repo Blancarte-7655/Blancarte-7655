@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://blancarte.lat">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3200&pause=900&color=5A7FBF&center=true&vCenter=true&width=640&lines=Construyo+apps+web+de+punta+a+punta;Entreno+IA+que+entiende+Lengua+de+Se%C3%B1as;Aseguro+mis+propios+servidores+Linux;JavaScript+%C2%B7+Python+%C2%B7+SQL" alt="Construyo apps web de punta a punta · Entreno IA · Aseguro servidores Linux · JavaScript, Python y SQL">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3200&pause=900&color=5A7FBF&center=true&vCenter=true&width=640&lines=JavaScript+%C2%B7+Python+%C2%B7+SQL+%C2%B7+TypeScript;MySQL+%C2%B7+SQLite+%C2%B7+MySQL+Workbench;Linux+%C2%B7+Ubuntu+%C2%B7+Nginx+%C2%B7+Cloudflare;Ableton+Live+%C2%B7+Pro+Tools+%C2%B7+Waves+%C2%B7+Valhalla;Premiere+Pro+%C2%B7+DaVinci+Resolve+%C2%B7+Photoshop+%C2%B7+Lightroom" alt="Lenguajes, bases de datos, servidor, audio y video: JavaScript · Python · SQL · TypeScript; MySQL · SQLite · MySQL Workbench; Linux · Ubuntu · Nginx · Cloudflare; Ableton Live · Pro Tools · Waves · Valhalla; Premiere Pro · DaVinci Resolve · Photoshop · Lightroom">
   </a>
 </p>
 
