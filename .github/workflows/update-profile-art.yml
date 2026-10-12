@@ -1,0 +1,36 @@
+# Cada día baja tus contribuciones reales y redibuja el calendario animado
+# (assets/contrib-oscuro.svg y assets/contrib-claro.svg). No necesita token.
+name: Actualizar calendario
+
+"on":
+  schedule:
+    - cron: "17 6 * * *"   # ~00:17 en Guadalajara
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/contributions.json"
+      - "assets/contrib-*.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  calendario:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests==2.32.3 beautifulsoup4==4.12.3
+      - name: Bajar contribuciones
+        run: python scripts/fetch_contributions.py
+        env:
+          GH_USUARIO: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python scripts/render_heatmap_svg.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "calendario: actualizar contribuciones [skip ci]"
+          file_pattern: "data/contributions.json assets/contrib-*.svg"
