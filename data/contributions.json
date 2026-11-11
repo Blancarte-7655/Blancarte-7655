@@ -1,10 +1,10 @@
 {
  "usuario": "Blancarte-7655",
- "actualizado": "2026-11-10",
+ "actualizado": "2026-11-11",
  "stats": {
-  "total": 491,
-  "racha_actual": 31,
-  "racha_larga": 31,
+  "total": 495,
+  "racha_actual": 32,
+  "racha_larga": 32,
   "mejor_dia": "11 oct (54)"
  },
  "dias": [
@@ -1840,6 +1840,11 @@
   },
   {
    "fecha": "2026-11-10",
+   "nivel": 1,
+   "cuenta": 4
+  },
+  {
+   "fecha": "2026-11-11",
    "nivel": 0,
    "cuenta": 0
   }
