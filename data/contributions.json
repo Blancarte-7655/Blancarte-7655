@@ -1,48 +1,13 @@
 {
  "usuario": "Blancarte-7655",
- "actualizado": "2026-11-21",
+ "actualizado": "2026-11-22",
  "stats": {
-  "total": 505,
-  "racha_actual": 42,
-  "racha_larga": 42,
+  "total": 506,
+  "racha_actual": 43,
+  "racha_larga": 43,
   "mejor_dia": "11 oct (54)"
  },
  "dias": [
-  {
-   "fecha": "2025-11-16",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-17",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-18",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-19",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-20",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-21",
-   "nivel": 0,
-   "cuenta": 0
-  },
-  {
-   "fecha": "2025-11-22",
-   "nivel": 0,
-   "cuenta": 0
-  },
   {
    "fecha": "2025-11-23",
    "nivel": 0,
@@ -645,7 +610,7 @@
   },
   {
    "fecha": "2026-03-23",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
@@ -665,7 +630,7 @@
   },
   {
    "fecha": "2026-03-27",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 5
   },
   {
@@ -680,7 +645,7 @@
   },
   {
    "fecha": "2026-03-30",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 5
   },
   {
@@ -785,7 +750,7 @@
   },
   {
    "fecha": "2026-04-20",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 7
   },
   {
@@ -795,7 +760,7 @@
   },
   {
    "fecha": "2026-04-22",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 10
   },
   {
@@ -835,7 +800,7 @@
   },
   {
    "fecha": "2026-04-30",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 7
   },
   {
@@ -890,12 +855,12 @@
   },
   {
    "fecha": "2026-05-11",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
    "fecha": "2026-05-12",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 12
   },
   {
@@ -925,7 +890,7 @@
   },
   {
    "fecha": "2026-05-18",
-   "nivel": 4,
+   "nivel": 2,
    "cuenta": 14
   },
   {
@@ -955,12 +920,12 @@
   },
   {
    "fecha": "2026-05-24",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 13
   },
   {
    "fecha": "2026-05-25",
-   "nivel": 4,
+   "nivel": 3,
    "cuenta": 22
   },
   {
@@ -1105,7 +1070,7 @@
   },
   {
    "fecha": "2026-06-23",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 9
   },
   {
@@ -1180,7 +1145,7 @@
   },
   {
    "fecha": "2026-07-08",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 9
   },
   {
@@ -1190,7 +1155,7 @@
   },
   {
    "fecha": "2026-07-10",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
@@ -1205,17 +1170,17 @@
   },
   {
    "fecha": "2026-07-13",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 11
   },
   {
    "fecha": "2026-07-14",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
    "fecha": "2026-07-15",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 10
   },
   {
@@ -1240,12 +1205,12 @@
   },
   {
    "fecha": "2026-07-20",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
    "fecha": "2026-07-21",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 7
   },
   {
@@ -1445,12 +1410,12 @@
   },
   {
    "fecha": "2026-08-30",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 9
   },
   {
    "fecha": "2026-08-31",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
@@ -1550,7 +1515,7 @@
   },
   {
    "fecha": "2026-09-20",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
@@ -1605,12 +1570,12 @@
   },
   {
    "fecha": "2026-10-01",
-   "nivel": 4,
+   "nivel": 2,
    "cuenta": 18
   },
   {
    "fecha": "2026-10-02",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 7
   },
   {
@@ -1625,12 +1590,12 @@
   },
   {
    "fecha": "2026-10-05",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 11
   },
   {
    "fecha": "2026-10-06",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 12
   },
   {
@@ -1665,12 +1630,12 @@
   },
   {
    "fecha": "2026-10-13",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 13
   },
   {
    "fecha": "2026-10-14",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 8
   },
   {
@@ -1725,17 +1690,17 @@
   },
   {
    "fecha": "2026-10-25",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 5
   },
   {
    "fecha": "2026-10-26",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
    "fecha": "2026-10-27",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 10
   },
   {
@@ -1745,7 +1710,7 @@
   },
   {
    "fecha": "2026-10-29",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 5
   },
   {
@@ -1770,12 +1735,12 @@
   },
   {
    "fecha": "2026-11-03",
-   "nivel": 3,
+   "nivel": 2,
    "cuenta": 10
   },
   {
    "fecha": "2026-11-04",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 6
   },
   {
@@ -1800,7 +1765,7 @@
   },
   {
    "fecha": "2026-11-09",
-   "nivel": 2,
+   "nivel": 1,
    "cuenta": 8
   },
   {
@@ -1860,6 +1825,11 @@
   },
   {
    "fecha": "2026-11-21",
+   "nivel": 1,
+   "cuenta": 1
+  },
+  {
+   "fecha": "2026-11-22",
    "nivel": 0,
    "cuenta": 0
   }
